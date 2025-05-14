@@ -19,7 +19,7 @@ class DBList(rpyc.Service):
     return sum
   
   def exposed_showElement(self, index):
-    if index >= self.value.len():
+    if index >= len(self.value):
       return "Error! Index out of bounds."
     else:
       return self.value[index]
