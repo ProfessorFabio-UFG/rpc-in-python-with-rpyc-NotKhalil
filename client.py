@@ -9,5 +9,5 @@ class Client:
   conn.root.exposed_append(11)
   conn.root.exposed_append(9)
   print (conn.root.exposed_value())   # Print the result
-  print(conn.exposed_sum())
-  print(conn.exposed_showElement(2))
+  print(conn.root.exposed_sum())
+  print(conn.root.exposed_showElement(2))
